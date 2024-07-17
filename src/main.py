@@ -7,7 +7,7 @@ DIR_PATH_PUBLIC = "./public"
 
 def main():
     print("Delete public directory")
-    if os.path.exists(DIR_PATH_STATIC, DIR_PATH_PUBLIC):
+    if os.path.exists(DIR_PATH_PUBLIC):
         shutil.rmtree(DIR_PATH_PUBLIC)
     
     print("Copying static files to public directory")
